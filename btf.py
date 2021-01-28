@@ -28,7 +28,7 @@ try:
 
 	#Quebrador
 	error = input('\033[1;32mQuando da Error: \033[1;31m')
-	for uss, pws in  zip(file_pw.readlines(), file_user.readlines()):
+	for pws, uss in  zip(file_pw.readlines(), file_user.readlines()):
 		
 		uss = uss.rstrip('\n')
 		pws = pws.rstrip('\n')

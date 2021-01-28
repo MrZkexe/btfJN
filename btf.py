@@ -23,8 +23,8 @@ try:
 	# setlistas 
 	diruser = 'WL-user/' + user 
 	dirpass = 'WL-pass/' + pw
-	file_pw = open(diruser)
-	file_user = open(dirpass)
+	file_pw = open(dirpass)
+	file_user = open(diruser)
 
 	#Quebrador
 	error = input('\033[1;32mQuando da Error: \033[1;31m')

@@ -6,6 +6,6 @@ git clone https://github.com/MrZkexe/btfJN.git
 
 cd btfJN
 
-python3 setup install
+pip install -r requirements.txt
 
 python3 btf.py

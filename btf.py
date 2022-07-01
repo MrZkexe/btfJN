@@ -13,8 +13,8 @@ try:
 	 
 		diruser = 'WL-user/' + user 
 		dirpass = 'WL-pass/' + pw
-		file_pw = open(dirpass)
-		file_user = open(diruser)
+		file_pw = open(dirpass, 'r', encoding='latin-1')
+		file_user = open(diruser, 'r', encoding='latin-1')
 
 		error = input('\033[1;32mQuando da Error: \033[1;31m')
 		for uss, pws in itertools.product(file_user.readlines(), file_pw.readlines()):
@@ -39,7 +39,7 @@ try:
 		pw = input('\033[1;32mSenhas Wordlist: \033[1;31m')
 	  
 		dirpass = 'WL-pass/' + pw
-		file_pw = open(dirpass)
+		file_pw = open(dirpass, 'r', encoding='latin-1')
 		
 
 		error = input('\033[1;32mQuando da Error: \033[1;31m')
@@ -64,7 +64,7 @@ try:
 		pw = input('\033[1;32mSenhas: \033[1;31m')
 	 
 		diruser = 'WL-user/' + user 
-		file_user = open(diruser)
+		file_user = open(diruser, 'r', encoding='latin-1')
 
 		error = input('\033[1;32mQuando da Error: \033[1;31m')
 		for uss in file_user.readlines():

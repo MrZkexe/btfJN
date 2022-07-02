@@ -91,7 +91,7 @@ try:
 		print(rs.text)
 		init()
 	def init():
-		print(climage.convert('tatu.png', is_unicode=True, width=40), '\033[1;31mv4.0\n')
+		print(climage.convert('tatu.png', is_unicode=True, width=40), '\033[1;31mv4.5\n')
 		print('\033[1;32mscript Feito por \033[1;31mMr-ZK_EXE\n')
 		print('\033[1;32mOpcões\n\n\033[1;33mdigite\n1 para pegar user e senha\n2 para quebrar senha se ja sabe o usuario\n3 para quebrar usuario se ja sabe o senha\n4 pegar o erro\n')
 		
